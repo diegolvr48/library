@@ -1,0 +1,59 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar {
+  background-color: #6c757d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  a {
+    color: #ffffff;
+  }
+}
+
+.content-page {
+  margin-top: 40px;
+}
+
+.v-select, .v-select.searchable .dropdown-toggle {
+  max-height: calc(2.19rem + 2px);
+}
+
+.v-select {
+  .dropdown-toggle::after {
+    display: none;
+  }
+}
+
+.v-select.is-invalid ~ .invalid-feedback, .mx-datepicker.is-invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.v-select.is-invalid {
+  .dropdown-toggle  {
+    border-color: #e3342f;
+  }
+}
+
+.mx-datepicker {
+  width: 100% !important;
+}
+
+.mx-datepicker.is-invalid {
+  .mx-input {
+    border-color: #e3342f;
+  }
+}
+
+.modal {
+  z-index: 990;
+}
+
+.modal-backdrop {
+  z-index: 980;
+}
