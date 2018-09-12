@@ -106,7 +106,7 @@
                     data: this.category
                 }).then(response => {
                     this.$refs.modal_category.hide();
-                    this.pagination.data.push(response.data);
+                   this.getData(this.pagination.current_page);
                     this.isLoading = false;
                 }).catch(error => {
                     this.hasError = true;

@@ -161,12 +161,7 @@
                     method,
                     data: this.book
                 }).then(response => {
-                    if (this.book.id) {
-                        this.getData(this.pagination.current_page);
-                    } else {
-                        this.pagination.data.push(response.data);
-                        this.pagination.total = this.pagination.data.length;
-                    }
+                    this.getData(this.pagination.current_page);
                     this.isLoading = false;
                     this.$refs.modal_book.hide();
                     this.book = this.fields();

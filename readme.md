@@ -9,6 +9,7 @@ This system is to manage their books
   - Run **composer install**
   - Run **php artisan key:generate**
   - Run **php artisan migrate --seed** (it has some seeded data for admin user)
+  - Run **php artisan jwt:secret**
   - Run **php artisan serve** (it start server on port 8000)
   - Now you can login as admin: launch the main URL and login with default credentials **admin@admin.com** - **1234567890**
   - Fill in the database with Categories
